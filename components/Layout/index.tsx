@@ -6,11 +6,7 @@ import React from 'react'
 const { Content } = Layout
 
 const contentStyle: React.CSSProperties = {
-  textAlign: 'center',
-  minHeight: 120,
-  lineHeight: '120px',
   color: '#fff',
-  backgroundColor: '#0958d9',
 }
 
 export const AppLayout = ({ children }: { children: React.ReactNode }) => {
@@ -20,6 +16,17 @@ export const AppLayout = ({ children }: { children: React.ReactNode }) => {
         token: {
           colorPrimary: '#DA4399',
           borderRadius: 2,
+          colorBorder: '#3A3841',
+        },
+        components: {
+          Select: {
+            activeBorderColor: '#DA4399',
+            activeOutlineColor: '#DA4399',
+            selectorBg: 'transparent',
+          },
+          Form: {
+            labelColor: '#89888B',
+          },
         },
       }}
     >

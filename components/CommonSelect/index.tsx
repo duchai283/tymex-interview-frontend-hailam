@@ -1,5 +1,6 @@
 import { Select } from 'antd'
 import React from 'react'
+import { FaAngleDown } from 'react-icons/fa6'
 
 interface IProps {
   disabled?: boolean
@@ -34,6 +35,8 @@ const CommonSelect: React.FC<IProps> = ({
       placeholder={placeholder}
       popupClassName="min-w-fit"
       allowClear
+      suffixIcon={<FaAngleDown color="#D6D6D6" />}
+      labelRender={(a) => <span className="text-white">{a.label}</span>}
     >
       {Object.entries(dataSource).map(([value, text]) => (
         <Select.Option key={value} value={value}>

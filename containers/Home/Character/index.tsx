@@ -26,9 +26,11 @@ const CharacterContainer = () => {
   }, [])
 
   return (
-    <InnerLayout className="flex gap-10">
-      <CharacterFilters />
-      <CharacterList data={data} />
+    <InnerLayout>
+      <div className="flex gap-10">
+        <CharacterFilters />
+        <CharacterList data={data} />
+      </div>
     </InnerLayout>
   )
 }

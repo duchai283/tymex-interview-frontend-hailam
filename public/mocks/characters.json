@@ -2,248 +2,210 @@
     "data": [
         {
             "name": "The DJ",
-            "theme": "Halloween",
-            "time": "",
             "price": 2.75,
-            "avatar": "https://drive.google.com/file/d/11utmn5hZniwDR1O82zeU_cGQkfWVu1eE/view",
-            "type": "Epic",
+            "avatar": "/epic_character.png",
+            "type": "epic",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": true
             }
         },
         {
             "name": "Assassin",
-            "theme": "Green",
-            "time": "",
             "price": 5.75,
-            "avatar": "https://drive.google.com/file/d/1l5-pp0B6u8Iw2Mks7CJbRa9y6gl_-0d0/view",
-            "type": "Common",
+            "avatar": "/common_character.png",
+            "type": "common",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": true
             }
         },
         {
             "name": "Neon Guy",
-            "theme": "blue",
-            "time": "",
             "price": 3.75,
-            "avatar": "https://drive.google.com/file/d/1H-3h8eKFLsJCIvmMo3vGoZDxXFQGVcF9/view",
-            "type": "Rare",
+            "avatar": "/rare_character.png",
+            "type": "rare",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": true
             }
         },
         {
             "name": "Mafia England",
-            "theme": "yellow",
-            "time": "",
             "price": 7.75,
-            "avatar": "https://drive.google.com/file/d/1nt7t_msidyzI_3Q8KlnRy7XZtbuchcWm/view",
-            "type": "Legendary",
+            "avatar": "/legendary_character.png",
+            "type": "legendary",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": false
             }
         },
         {
             "name": "Bassketball Girl",
-            "theme": "pink",
-            "time": "",
             "price": 8.75,
-            "avatar": "https://drive.google.com/file/d/1lC5i9Wgr5UAfSuewmxR2UYgTCq2gAydq/view",
-            "type": "Mythic",
+            "avatar": "/mythic_character.png",
+            "type": "mythic",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": false
             }
         },
         {
             "name": "The DJ",
-            "theme": "Halloween",
-            "time": "",
             "price": 2.75,
-            "avatar": "https://drive.google.com/file/d/11utmn5hZniwDR1O82zeU_cGQkfWVu1eE/view",
-            "type": "Epic",
+            "avatar": "/epic_character.png",
+            "type": "epic",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": true
             }
         },
         {
             "name": "Bassketball Girl",
-            "theme": "pink",
-            "time": "",
             "price": 8.75,
-            "avatar": "https://drive.google.com/file/d/1lC5i9Wgr5UAfSuewmxR2UYgTCq2gAydq/view",
-            "type": "Mythic",
+            "avatar": "/mythic_character.png",
+            "type": "mythic",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": false
             }
         },
         {
             "name": "Assassin",
-            "theme": "Green",
-            "time": "",
             "price": 5.75,
-            "avatar": "https://drive.google.com/file/d/1l5-pp0B6u8Iw2Mks7CJbRa9y6gl_-0d0/view",
-            "type": "Common",
+            "avatar": "/common_character.png",
+            "type": "common",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": true
             }
         },
         {
             "name": "Neon Guy",
-            "theme": "blue",
-            "time": "",
             "price": 3.75,
-            "avatar": "https://drive.google.com/file/d/1H-3h8eKFLsJCIvmMo3vGoZDxXFQGVcF9/view",
-            "type": "Rare",
+            "avatar": "/rare_character.png",
+            "type": "rare",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": true
             }
         },
         {
             "name": "Mafia England",
-            "theme": "yellow",
-            "time": "",
             "price": 7.75,
-            "avatar": "https://drive.google.com/file/d/1nt7t_msidyzI_3Q8KlnRy7XZtbuchcWm/view",
-            "type": "Legendary",
+            "avatar": "/legendary_character.png",
+            "type": "legendary",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": false
             }
         },
         {
             "name": "Neon Guy",
-            "theme": "blue",
-            "time": "",
             "price": 3.75,
-            "avatar": "https://drive.google.com/file/d/1H-3h8eKFLsJCIvmMo3vGoZDxXFQGVcF9/view",
-            "type": "Rare",
+            "avatar": "/rare_character.png",
+            "type": "rare",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": true
             }
         },
         {
             "name": "The DJ",
-            "theme": "Halloween",
-            "time": "",
             "price": 2.75,
-            "avatar": "https://drive.google.com/file/d/11utmn5hZniwDR1O82zeU_cGQkfWVu1eE/view",
-            "type": "Epic",
+            "avatar": "/epic_character.png",
+            "type": "epic",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": true
             }
         },
         {
             "name": "Assassin",
-            "theme": "Green",
-            "time": "",
             "price": 5.75,
-            "avatar": "https://drive.google.com/file/d/1l5-pp0B6u8Iw2Mks7CJbRa9y6gl_-0d0/view",
-            "type": "Common",
+            "avatar": "/common_character.png",
+            "type": "common",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": true
             }
         },
         {
             "name": "Neon Guy",
-            "theme": "blue",
-            "time": "",
             "price": 3.75,
-            "avatar": "https://drive.google.com/file/d/1H-3h8eKFLsJCIvmMo3vGoZDxXFQGVcF9/view",
-            "type": "Rare",
+            "avatar": "/rare_character.png",
+            "type": "rare",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": true
             }
         },
         {
             "name": "Assassin",
-            "theme": "Green",
-            "time": "",
             "price": 5.75,
-            "avatar": "https://drive.google.com/file/d/1l5-pp0B6u8Iw2Mks7CJbRa9y6gl_-0d0/view",
-            "type": "Common",
+            "avatar": "/common_character.png",
+            "type": "common",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": true
             }
         },
         {
             "name": "Mafia England",
-            "theme": "yellow",
-            "time": "",
             "price": 7.75,
-            "avatar": "https://drive.google.com/file/d/1nt7t_msidyzI_3Q8KlnRy7XZtbuchcWm/view",
-            "type": "Legendary",
+            "avatar": "/legendary_character.png",
+            "type": "legendary",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": false
             }
         },
         {
             "name": "Bassketball Girl",
-            "theme": "pink",
-            "time": "",
             "price": 8.75,
-            "avatar": "https://drive.google.com/file/d/1lC5i9Wgr5UAfSuewmxR2UYgTCq2gAydq/view",
-            "type": "Mythic",
+            "avatar": "/mythic_character.png",
+            "type": "mythic",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": false
             }
         },
         {
             "name": "The DJ",
-            "theme": "Halloween",
-            "time": "",
             "price": 2.75,
-            "avatar": "https://drive.google.com/file/d/11utmn5hZniwDR1O82zeU_cGQkfWVu1eE/view",
-            "type": "Epic",
+            "avatar": "/epic_character.png",
+            "type": "epic",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": true
             }
         },
         {
             "name": "Bassketball Girl",
-            "theme": "pink",
-            "time": "",
             "price": 8.75,
-            "avatar": "https://drive.google.com/file/d/1lC5i9Wgr5UAfSuewmxR2UYgTCq2gAydq/view",
-            "type": "Mythic",
+            "avatar": "/mythic_character.png",
+            "type": "mythic",
             "seller": {
                 "name": "Ghozali_Ghozalu",
-                "avatar": "https://drive.google.com/file/d/1AvOhrndezMWvQmQWW0woSLMQTHcbpZRr/view",
+                "avatar": "/avartar.jpeg",
                 "verified": false
             }
         }

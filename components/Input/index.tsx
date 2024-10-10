@@ -1,9 +1,9 @@
-import { Input } from 'antd'
+import { Input, InputProps } from 'antd'
+import { FC } from 'react'
 
-const InputWrapper = ({ ...rest }) => {
+const InputWrapper: FC<InputProps> = ({ ...rest }) => {
   return (
     <Input
-      className="placeholder:text-gray-500 "
       style={{
         backgroundColor: 'transparent',
         border: '1px solid #89888B', // Optional: add bottom border for visibility

@@ -1,4 +1,4 @@
-import { Button, Input, Space } from 'antd'
+import { Button, Image, Input, Space } from 'antd'
 import InnerLayout from 'components/InnerLayout'
 
 const Footer = () => {
@@ -23,8 +23,14 @@ const Footer = () => {
           <div>
             <div className="text-xl pb-9">CONTACT US</div>
             <Space direction="vertical" size="large">
-              <div>01234568910</div>
-              <div>tymex-talent@tyme.com</div>
+              <div className="flex items-center">
+                <Image src="/icons/phone.svg" className="pr-2" />
+                <span>01234568910</span>
+              </div>
+              <div className="flex items-center">
+                <Image src="/icons/comment.svg" className="pr-2" />
+                <span>tymex-talent@tyme.com</span>
+              </div>
             </Space>
           </div>
           <div className="">

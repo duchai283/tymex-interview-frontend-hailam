@@ -24,4 +24,28 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #777777; /* Track background */
+    border-top-left-radius: 6px; /* Roundness of the scrollbar */
+    border-bottom-left-radius: 6px; /* Roundness of the scrollbar */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #ffcc21; /* Scrollbar color */
+    border-radius: 10px; /* Roundness of the scrollbar */
+    min-height: 10px;
+    height: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 9px;
+  }
+}
+
+.ant-input::placeholder {
+  color: gray;
+  opacity: 1;
 }
