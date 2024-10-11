@@ -11,3 +11,21 @@ export interface ICharacter {
     verified: boolean
   }
 }
+
+export interface ICharacterFilters {
+  page?: number
+  perPage?: number
+  orderBy?: string
+  name?: string
+  status?: boolean
+  tier?: string
+  priceOrder?: string
+  theme?: string
+  priceRange?: number[]
+  tab?: string
+}
+
+export interface ICharacterTabs {
+  val: string
+  label: string
+}

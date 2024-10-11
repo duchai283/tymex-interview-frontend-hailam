@@ -6,10 +6,11 @@ const InputWrapper: FC<InputProps> = ({ ...rest }) => {
     <Input
       style={{
         backgroundColor: 'transparent',
-        border: '1px solid #89888B', // Optional: add bottom border for visibility
-        color: 'white', // Set text color
+        border: '1px solid #89888B',
+        color: 'white',
         outline: 'none',
         boxShadow: 'none',
+        padding: '8px 0 8px 14px',
       }}
       {...rest}
     />

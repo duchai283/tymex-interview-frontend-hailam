@@ -27,14 +27,27 @@ export const AppLayout = ({ children }: { children: React.ReactNode }) => {
           Form: {
             labelColor: '#89888B',
           },
+          Button: {
+            colorBgContainerDisabled: '#5C2159',
+            colorTextDisabled: '#FFFFFF',
+          },
+          Slider: {
+            railBg: '#3A3841',
+            railHoverBg: '#3A3841',
+            railSize: 8,
+            dotBorderColor: 'red',
+            dotSize: 100,
+            handleSize: 20,
+            handleSizeHover: 20,
+            trackBg: '#ff99cc',
+            handleLineWidth: 1,
+          },
         },
       }}
     >
-      <Layout className="w-full font-semibold">
+      <Layout className="w-full font-[family-name:var(--font-geist-bebasneue)]">
         <Navbar />
-
         <Content style={contentStyle}>{children}</Content>
-
         <Footer />
       </Layout>
     </ConfigProvider>

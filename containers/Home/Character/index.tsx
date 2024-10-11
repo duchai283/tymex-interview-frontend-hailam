@@ -3,34 +3,76 @@ import CharacterFilters from './CharacterFilters'
 import CharacterList from './CharacterList'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Space } from 'antd'
+import { ICharacter, ICharacterFilters } from 'interface/character'
+import {
+  DATA_REFRESH_INTERVAL_MS,
+  DEFAULT_PAGE,
+  DEFAULT_PER_PAGE,
+} from 'utils/commonUtils'
+import { get, isEmpty } from 'lodash'
+import { defaultStringifyOption } from 'utils/commonUtils'
+import { stringify } from 'qs'
+import { useRouter } from 'next/router'
+import { FloatButton } from 'antd'
+
+const defaultFilters: ICharacterFilters = {
+  page: DEFAULT_PAGE,
+  perPage: DEFAULT_PER_PAGE,
+  tab: '',
+}
 
 const CharacterContainer = () => {
-  const [data, setData] = useState([])
-  const [error, setError] = useState()
+  const router = useRouter()
+  const [data, setData] = useState<ICharacter[]>([])
+  const [loading, setLoading] = useState<boolean>(false)
+  const [filters, setFilters] = useState<ICharacterFilters>({})
+
+  const getCharacters = async (filters: ICharacterFilters) => {
+    setLoading(true)
+    try {
+      const params = stringify({ ...filters }, defaultStringifyOption)
+      const res = await axios.get(`/api/characters?${params}`)
+      console.log('res', res)
+      if (res && res.data) {
+        setData(res.data)
+      }
+    } catch (error) {
+      console.log('error', error)
+    } finally {
+      setLoading(false)
+    }
+  }
 
   useEffect(() => {
-    const getCharacters = async () => {
-      try {
-        const res = await axios.get('/api/characters')
-        console.log('res', res)
-        if (res && res.data) {
-          setData(res.data)
-        }
-      } catch (error) {
-        console.log('error', error)
-      }
+    if (!isEmpty(filters)) {
+      getCharacters(filters)
     }
 
-    getCharacters()
-  }, [])
+    const interval = setInterval(() => {
+      getCharacters(filters)
+    }, DATA_REFRESH_INTERVAL_MS)
+
+    return () => clearInterval(interval)
+  }, [filters])
+
+  useEffect(() => {
+    let tmpFilters: ICharacterFilters = {}
+    if (!isEmpty(router.query)) {
+      const page = parseInt(get(router, 'query.page', DEFAULT_PAGE) as string)
+      tmpFilters = { ...router.query, page }
+    } else {
+      tmpFilters = { ...defaultFilters }
+    }
+    setFilters(tmpFilters)
+  }, [router.query])
 
   return (
     <InnerLayout>
-      <div className="flex gap-10">
-        <CharacterFilters />
-        <CharacterList data={data} />
+      <div className="block md:flex justify-center flex-wrap gap-10">
+        <CharacterFilters filters={filters} />
+        <CharacterList data={data} loading={loading} filters={filters} />
       </div>
+      <FloatButton.BackTop />
     </InnerLayout>
   )
 }

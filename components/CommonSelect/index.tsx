@@ -1,5 +1,5 @@
 import { Select } from 'antd'
-import React from 'react'
+import React, { memo } from 'react'
 import { FaAngleDown } from 'react-icons/fa6'
 
 interface IProps {
@@ -47,4 +47,4 @@ const CommonSelect: React.FC<IProps> = ({
   )
 }
 
-export default React.memo(CommonSelect)
+export default memo(CommonSelect)

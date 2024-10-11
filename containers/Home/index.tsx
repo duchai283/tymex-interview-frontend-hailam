@@ -1,25 +1,25 @@
 import localFont from 'next/font/local'
 import styles from './Home.module.css'
-import Background from 'components/Background'
+import HeroBackground from 'components/HeroBackground'
 import dynamic from 'next/dynamic'
 
 const CharacterContainer = dynamic(() => import('containers/Home/Character'), {
   ssr: false,
 })
 
-const geistRoboto = localFont({
-  src: './fonts/Roboto.woff',
-  variable: '--font-geist-roboto',
-  weight: '100 900',
+const geistBebasNeue = localFont({
+  src: './fonts/BebasNeue-Regular.ttf',
+  variable: '--font-geist-bebasneue',
+  weight: '400',
 })
 
 export default function Home() {
   return (
     <div
-      className={`${geistRoboto.variable} font-[family-name:var(--font-geist-roboto)]`}
+      className={`${geistBebasNeue.variable} font-[family-name:var(--font-geist-bebasneue)]`}
     >
-      <Background />
-      <div className={`${styles.background}`}>
+      <HeroBackground />
+      <div className={`${styles.background} py-[40px] md:py-14 lg:py-[120px]`}>
         <CharacterContainer />
       </div>
     </div>

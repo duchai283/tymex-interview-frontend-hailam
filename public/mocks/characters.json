@@ -5,6 +5,7 @@
             "price": 2.75,
             "avatar": "/epic_character.png",
             "type": "epic",
+            "theme": "starry_sky",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -16,6 +17,7 @@
             "price": 5.75,
             "avatar": "/common_character.png",
             "type": "common",
+            "theme": "flower_garden",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -27,6 +29,7 @@
             "price": 3.75,
             "avatar": "/rare_character.png",
             "type": "rare",
+            "theme": "cloudy_morning",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -38,6 +41,7 @@
             "price": 7.75,
             "avatar": "/legendary_character.png",
             "type": "legendary",
+            "theme": "halloween",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -45,10 +49,11 @@
             }
         },
         {
-            "name": "Bassketball Girl",
+            "name": "Basketball Girl",
             "price": 8.75,
             "avatar": "/mythic_character.png",
             "type": "mythic",
+            "theme": "rainbow_dreams",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -60,6 +65,7 @@
             "price": 2.75,
             "avatar": "/epic_character.png",
             "type": "epic",
+            "theme": "starry_sky",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -67,10 +73,11 @@
             }
         },
         {
-            "name": "Bassketball Girl",
+            "name": "Basketball Girl",
             "price": 8.75,
             "avatar": "/mythic_character.png",
             "type": "mythic",
+            "theme": "rainbow_dreams",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -82,6 +89,7 @@
             "price": 5.75,
             "avatar": "/common_character.png",
             "type": "common",
+            "theme": "flower_garden",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -93,6 +101,7 @@
             "price": 3.75,
             "avatar": "/rare_character.png",
             "type": "rare",
+            "theme": "cloudy_morning",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -104,6 +113,7 @@
             "price": 7.75,
             "avatar": "/legendary_character.png",
             "type": "legendary",
+            "theme": "halloween",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -115,6 +125,7 @@
             "price": 3.75,
             "avatar": "/rare_character.png",
             "type": "rare",
+            "theme": "cloudy_morning",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -126,6 +137,7 @@
             "price": 2.75,
             "avatar": "/epic_character.png",
             "type": "epic",
+            "theme": "starry_sky",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -137,6 +149,7 @@
             "price": 5.75,
             "avatar": "/common_character.png",
             "type": "common",
+            "theme": "flower_garden",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -148,6 +161,7 @@
             "price": 3.75,
             "avatar": "/rare_character.png",
             "type": "rare",
+            "theme": "cloudy_morning",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -159,6 +173,7 @@
             "price": 5.75,
             "avatar": "/common_character.png",
             "type": "common",
+            "theme": "flower_garden",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -170,6 +185,7 @@
             "price": 7.75,
             "avatar": "/legendary_character.png",
             "type": "legendary",
+            "theme": "halloween",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -177,10 +193,11 @@
             }
         },
         {
-            "name": "Bassketball Girl",
+            "name": "Basketball Girl",
             "price": 8.75,
             "avatar": "/mythic_character.png",
             "type": "mythic",
+            "theme": "rainbow_dreams",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -192,6 +209,7 @@
             "price": 2.75,
             "avatar": "/epic_character.png",
             "type": "epic",
+            "theme": "starry_sky",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
@@ -199,10 +217,23 @@
             }
         },
         {
-            "name": "Bassketball Girl",
+            "name": "Basketball Girl",
             "price": 8.75,
             "avatar": "/mythic_character.png",
             "type": "mythic",
+            "theme": "rainbow_dreams",
+            "seller": {
+                "name": "Ghozali_Ghozalu",
+                "avatar": "/avartar.jpeg",
+                "verified": false
+            }
+        },
+        {
+            "name": "Mafia England",
+            "price": 7.75,
+            "avatar": "/legendary_character.png",
+            "type": "legendary",
+            "theme": "halloween",
             "seller": {
                 "name": "Ghozali_Ghozalu",
                 "avatar": "/avartar.jpeg",
