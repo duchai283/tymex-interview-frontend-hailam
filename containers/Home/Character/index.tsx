@@ -32,7 +32,6 @@ const CharacterContainer = () => {
     try {
       const params = stringify({ ...filters }, defaultStringifyOption)
       const res = await axios.get(`/api/characters?${params}`)
-      console.log('res', res)
       if (res && res.data) {
         setData(res.data)
       }

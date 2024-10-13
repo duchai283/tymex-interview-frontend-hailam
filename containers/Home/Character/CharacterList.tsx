@@ -7,7 +7,7 @@ import { stringify } from 'qs'
 import { defaultStringifyOption } from 'utils/commonUtils'
 import CharacterSkeleton from 'components/CharacterSkeleton'
 import Empty from 'components/Empty'
-import CharacterFilterTabs from './CharacterFilterTabs'
+import CharacterTabs from './CharacterTabs'
 import { useRef } from 'react'
 
 interface IProps {
@@ -30,15 +30,15 @@ const CharacterList: React.FC<IProps> = ({ data, loading, filters }) => {
       },
       defaultStringifyOption
     )
+    router.push(`${router.pathname}?${params}`, undefined, { scroll: false })
     if (contentRef && contentRef.current) {
       contentRef.current.scrollIntoView({ block: 'start', behavior: 'smooth' })
     }
-    router.push(`${router.pathname}?${params}`, undefined, { scroll: false })
   }
 
   return (
     <div ref={contentRef}>
-      <CharacterFilterTabs filters={filters} />
+      <CharacterTabs filters={filters} />
       <h3 className="mb-4 mt-4 text-center md:text-right transition-all">
         {loading ? (
           <div className="items-center flex justify-end">

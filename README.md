@@ -1,40 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Web Application Test Submission
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+This document outlines the features and implementation details of the web application I have built as part of the test assignment. The application is designed to provide a user-friendly interface while effectively fetching and displaying data from an API.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## What I Have Done So Far
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. UI Development
+   Frameworks Used: I utilized Ant Design (antd) along with Tailwind CSS to build a responsive user interface that aligns with the reference Figma design.
+   Responsive Design: The application is fully responsive, ensuring a seamless user experience across various devices.
+2. Data Fetching
+   API Integration: Implemented data fetching using Axios to retrieve data from the server.
+   Server-Side Rendering: Built the application using Next.js, leveraging its server-side rendering capabilities to improve performance and SEO.
+3. Data Handling
+   Load More Functionality: Added a "Load More" button to fetch additional data from the server. This functionality is implemented using route.query to manage state and data retrieval.
+   Empty Data Handling: Developed error handling for scenarios where no data is returned.
+   Skeleton Loading: Incorporated skeleton loading indicators to provide visual feedback while data is being fetched.
+4. Automatic Data Refresh
+   Auto-Refresh Mechanism: Implemented a system to automatically refresh data every 60 seconds, ensuring users have access to the latest information. This feature is triggered only if there are no active filters applied by users.
+5. Search Functionality
+   Multi-Criteria Search: Implemented a search feature that supports multiple criteria, allowing users to refine their data queries.
+   Auto-Trigger Search: The search is designed to automatically trigger when any search criteria change, providing a dynamic user experience.
+   Debounce Search: Incorporated debouncing to limit the number of API calls made during searches, optimizing performance and reducing server load.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for considering my submission. I look forward to your feedback.

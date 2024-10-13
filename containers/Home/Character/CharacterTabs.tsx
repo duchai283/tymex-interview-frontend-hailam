@@ -8,7 +8,7 @@ import { defaultStringifyOption } from 'utils/commonUtils'
 interface IProps {
   filters: ICharacterFilters
 }
-const CharacterFilterTabs: React.FC<IProps> = ({ filters }) => {
+const CharacterTabs: React.FC<IProps> = ({ filters }) => {
   const router = useRouter()
 
   const handleChangeTab = (tab: ICharacterTabs) => {
@@ -45,4 +45,4 @@ const CharacterFilterTabs: React.FC<IProps> = ({ filters }) => {
   )
 }
 
-export default CharacterFilterTabs
+export default CharacterTabs

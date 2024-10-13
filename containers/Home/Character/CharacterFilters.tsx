@@ -79,15 +79,10 @@ const CharacterFilters: React.FC<IProps> = ({ filters }) => {
   }
 
   const middlewareFilters = () => {
-    console.log('router.query', router.query)
     const isFilterEmpty = Object.values(router.query).every((value) =>
       isEmpty(value)
     )
-
-    console.log('isFilterEmpty', isFilterEmpty)
-    if (!isFilterEmpty) {
-      form.submit()
-    }
+    if (!isFilterEmpty) form.submit()
   }
 
   return (

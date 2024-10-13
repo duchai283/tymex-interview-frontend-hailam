@@ -28,7 +28,6 @@ const randomData = (data: any, perPage: number) => {
 }
 const buildDataByPage = (data: any, page: number, perPage: number) => {
   let output: any = []
-  console.log('data.length', data.length)
   for (let i = 0; i <= page; i++) {
     output = [...output, ...randomData(data, perPage)]
   }
@@ -100,6 +99,6 @@ export default async function handler(
     }
   } catch (error) {
     console.error('Error reading or parsing characters file:', error)
-    res.status(404).json({ message: 'No characters found' })
+    res.status(404).json({ message: 'Something went wrong!' })
   }
 }
