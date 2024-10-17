@@ -1,4 +1,4 @@
-import CustomButton from 'components/CustomButton'
+import { Button } from 'antd'
 import { useRouter } from 'next/router'
 
 const Custom404 = () => {
@@ -20,12 +20,9 @@ const Custom404 = () => {
             </p>
 
             <div className="flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto">
-              <CustomButton
-                className="w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 shrink-0 sm:w-auto "
-                onClick={() => router.push('/')}
-              >
+              <Button type="primary" onClick={() => router.push('/')}>
                 Take me home
-              </CustomButton>
+              </Button>
             </div>
           </div>
         </div>

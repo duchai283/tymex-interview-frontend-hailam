@@ -17,11 +17,11 @@
 }
 
 @layer utilities {
-  .bg-gradient-primary {
-    background: linear-gradient(to right, #d94396, #d937cc);
-  }
   .bg-gradient-primary-inactive {
     background: linear-gradient(to right, #5c2252, #5d1c69);
+  }
+  .bg-gradient-primary {
+    background: linear-gradient(to right, #d94396, #d937cc);
   }
 }
 

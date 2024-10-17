@@ -3,8 +3,8 @@ import styles from './HeroBackground.module.css' // Import CSS module for stylin
 const Background = () => {
   return (
     <div
-      className={`${styles.background} min-h-64 md:min-h-96 xl:min-h-[720px]`}
-    ></div>
+      className={`${styles.background} min-h-64 md:min-h-96 xl:min-h-[580px]`}
+    />
   )
 }
 

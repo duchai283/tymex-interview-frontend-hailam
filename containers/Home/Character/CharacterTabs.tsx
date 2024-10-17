@@ -1,43 +1,31 @@
 import React from 'react'
-import { ICharacterFilters, ICharacterTabs } from 'interface/character'
-import { useRouter } from 'next/router'
-import { stringify } from 'qs'
 import { CHARACTER_TABS } from 'utils/characterUtils'
-import { defaultStringifyOption } from 'utils/commonUtils'
+import router from 'next/router'
+import classNames from 'classnames'
 
 interface IProps {
-  filters: ICharacterFilters
+  onChange: (tab: string) => void
+  isLoading: boolean
 }
-const CharacterTabs: React.FC<IProps> = ({ filters }) => {
-  const router = useRouter()
-
-  const handleChangeTab = (tab: ICharacterTabs) => {
-    const params = stringify(
-      {
-        ...router.query,
-        tab: tab.val,
-      },
-      defaultStringifyOption
-    )
-    router.push(`${router.pathname}?${params}`, undefined, { scroll: false })
-  }
-
+const CharacterTabs: React.FC<IProps> = ({ onChange, isLoading }) => {
   return (
     <div className="tabs mx-auto hidden md:block ">
       <ul className="flex flex-wrap gap-6 p-6 transition-all duration-300 overflow-hidden mx-auto md:mx-0">
         {CHARACTER_TABS.map((item) => (
           <li
             key={item.val}
-            className={`cursor-pointer ${
-              filters?.tab === item.val
-                ? 'bg-gradient-primary'
-                : 'bg-gradient-primary-inactive'
-            } rounded`}
-            onClick={() => handleChangeTab(item)}
+            className={classNames(
+              'bg-gradient-primary-inactive cursor-pointer rounded inline-block py-3 px-6 text-white font-medium tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl active tablink hover:bg-gradient-primary',
+              {
+                'bg-gradient-primary': (router?.query?.tab || '') === item.val,
+                'cursor-not-allowed':
+                  isLoading && (router?.query?.tab || '') !== item.val,
+              }
+            )}
+            onClick={() => !isLoading && onChange(item.val)}
+            aria-disabled={true}
           >
-            <div className="inline-block py-3 px-6 text-white  font-medium  tab-active:bg-indigo-600 tab-active:text-white tab-active:rounded-xl active tablink">
-              {item.label}
-            </div>
+            {item.label}
           </li>
         ))}
       </ul>

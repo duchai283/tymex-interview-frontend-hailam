@@ -50,5 +50,5 @@ export const CHARACTER_TABS: ICharacterTabs[] = [
   { val: 'mythic', label: 'Mythic' },
   { val: 'epic', label: 'Epic' },
   { val: 'rare', label: 'Rare' },
-  { val: 'common', label: 'common' },
+  { val: 'common', label: 'Common' },
 ]

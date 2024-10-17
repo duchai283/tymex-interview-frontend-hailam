@@ -1,5 +1,4 @@
-import { Image, Space } from 'antd'
-import CustomButton from 'components/CustomButton'
+import { Button, Image, Space } from 'antd'
 import Input from 'components/CustomInput'
 import InnerLayout from 'components/InnerLayout'
 import Link from 'next/link'
@@ -25,7 +24,7 @@ const Footer = () => {
     console.log('email', email)
   }
   return (
-    <div className="w-full bg-[#17161A] h-[550px]">
+    <div className="w-full bg-[#17161A] h-[550px] text-white">
       <InnerLayout className="p-4 md:pt-[60px]">
         <div className="flex flex-wrap justify-between mb-[60px]">
           <div className="mb-6">
@@ -75,14 +74,14 @@ const Footer = () => {
                 placeholder="Your email address"
                 className="w-full mr-5"
               />
-              <CustomButton
+              <Button
                 type="primary"
                 size="large"
                 className="font-bold px-4 md:px-10"
                 onClick={onSubscribe}
               >
                 Subscribe
-              </CustomButton>
+              </Button>
             </div>
           </div>
           <div></div>

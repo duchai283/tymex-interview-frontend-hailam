@@ -1,4 +1,4 @@
-import CustomButton from 'components/CustomButton'
+import { Button } from 'antd'
 import { useRouter } from 'next/router'
 
 const Empty = () => {
@@ -94,12 +94,13 @@ const Empty = () => {
             see appointments{' '}
           </p>
           <div className="flex gap-3">
-            <CustomButton
+            <Button
+              type="primary"
               onClick={handleReset}
               className="w-full px-3 py-2 transition-all duration-500 rounded-full text-white text-xs font-semibold "
             >
               Clear Filter
-            </CustomButton>
+            </Button>
           </div>
         </div>
       </div>

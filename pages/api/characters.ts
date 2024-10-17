@@ -93,7 +93,7 @@ export default async function handler(
     if (page) {
       setTimeout(() => {
         res.status(200).json(data)
-      }, 2000)
+      }, 1000)
     } else {
       res.status(200).json(data)
     }

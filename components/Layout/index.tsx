@@ -1,4 +1,4 @@
-import { ConfigProvider, Layout } from 'antd'
+import { ConfigProvider, FloatButton, Layout } from 'antd'
 import Footer from 'components/Footer'
 import Navbar from 'components/NavBar'
 import React from 'react'
@@ -7,6 +7,7 @@ const { Content } = Layout
 
 const contentStyle: React.CSSProperties = {
   color: '#fff',
+  minHeight: '100vh',
 }
 
 export const AppLayout = ({ children }: { children: React.ReactNode }) => {
@@ -50,6 +51,7 @@ export const AppLayout = ({ children }: { children: React.ReactNode }) => {
         <Content style={contentStyle}>{children}</Content>
         <Footer />
       </Layout>
+      <FloatButton.BackTop />
     </ConfigProvider>
   )
 }

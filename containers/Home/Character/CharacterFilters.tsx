@@ -8,7 +8,6 @@ import {
   SliderSingleProps,
 } from 'antd'
 import CommonSelect from 'components/CommonSelect'
-import CustomButton from 'components/CustomButton'
 import Input from 'components/CustomInput'
 import { ICharacterFilters } from 'interface/character'
 import { useRouter } from 'next/router'
@@ -40,9 +39,8 @@ const CharacterFilters: React.FC<IProps> = ({ filters }) => {
   const [form] = Form.useForm()
   const router = useRouter()
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  const contentRef = useRef<HTMLDivElement>(null)
   const [search, setSearch] = useState<string>('')
-  const debouncedSearch = useDebounce<string>(search, 1500)
+  const debouncedSearch = useDebounce<string>(search, 1000)
 
   const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
     const isFilterEmpty = Object.values(values).every((value) => !value)
@@ -68,9 +66,7 @@ const CharacterFilters: React.FC<IProps> = ({ filters }) => {
   }, [filters])
 
   useEffect(() => {
-    if (debouncedSearch) {
-      onFinish({ name: debouncedSearch })
-    }
+    onFinish({ name: debouncedSearch })
   }, [debouncedSearch])
 
   const handleReset = () => {
@@ -120,84 +116,82 @@ const CharacterFilters: React.FC<IProps> = ({ filters }) => {
           layout="vertical"
           form={form}
         >
-          <div ref={contentRef}>
-            <Form.Item
-              name="priceRange"
-              label="PRICE"
-              className="w-full mb-0"
-              getValueFromEvent={(value) => {
-                middlewareFilters()
-                return value
-              }}
-            >
-              <Slider range max={200} />
-            </Form.Item>
-            <div className="flex justify-between text-[#D6D6D6] mb-10">
-              <div>0.01 ETH</div>
-              <div>200 ETH</div>
-            </div>
-            <Form.Item
-              name="tier"
-              label="TIER"
-              className="w-full"
-              getValueFromEvent={(value) => {
-                middlewareFilters()
-                return value
-              }}
-            >
-              <CommonSelect
-                dataSource={SELECT_TIER_OPTIONS}
-                placeholder={`Select Tier`}
-              />
-            </Form.Item>
-            <Form.Item
-              name="theme"
-              label="THEME"
-              className="w-full"
-              getValueFromEvent={(value) => {
-                middlewareFilters()
-                return value
-              }}
-            >
-              <CommonSelect
-                dataSource={SELECT_THEME_OPTIONS}
-                placeholder={`Select Theme`}
-              />
-            </Form.Item>
-            <Form.Item
-              name="priceOrder"
-              label="PRICE"
-              className="w-full"
-              getValueFromEvent={(value) => {
-                middlewareFilters()
-                return value
-              }}
-            >
-              <CommonSelect
-                dataSource={SELECT_PRICE_ORDER_OPTIONS}
-                placeholder={`Select price`}
-              />
-            </Form.Item>
-            <Space size="large">
-              <Button
-                icon={<Image src="/icons/clear.svg" preview={false} />}
-                type="text"
-                size="large"
-                style={{ color: 'white' }}
-                onClick={handleReset}
-              >
-                Reset filter
-              </Button>
-              <CustomButton
-                type="primary"
-                size="large"
-                className="font-bold px-10"
-                htmlType="submit"
-              >
-                Search
-              </CustomButton>
-            </Space>
+          <Form.Item
+            name="priceRange"
+            label="PRICE"
+            className="w-full mb-0"
+            getValueFromEvent={(value) => {
+              middlewareFilters()
+              return value
+            }}
+          >
+            <Slider range max={200} />
+          </Form.Item>
+          <div className="flex justify-between text-[#D6D6D6] mb-10">
+            <div>0.01 ETH</div>
+            <div>200 ETH</div>
           </div>
+          <Form.Item
+            name="tier"
+            label="TIER"
+            className="w-full"
+            getValueFromEvent={(value) => {
+              middlewareFilters()
+              return value
+            }}
+          >
+            <CommonSelect
+              dataSource={SELECT_TIER_OPTIONS}
+              placeholder={`Select Tier`}
+            />
+          </Form.Item>
+          <Form.Item
+            name="theme"
+            label="THEME"
+            className="w-full"
+            getValueFromEvent={(value) => {
+              middlewareFilters()
+              return value
+            }}
+          >
+            <CommonSelect
+              dataSource={SELECT_THEME_OPTIONS}
+              placeholder={`Select Theme`}
+            />
+          </Form.Item>
+          <Form.Item
+            name="priceOrder"
+            label="PRICE"
+            className="w-full"
+            getValueFromEvent={(value) => {
+              middlewareFilters()
+              return value
+            }}
+          >
+            <CommonSelect
+              dataSource={SELECT_PRICE_ORDER_OPTIONS}
+              placeholder={`Select price`}
+            />
+          </Form.Item>
+          <Space size="large">
+            <Button
+              icon={<Image src="/icons/clear.svg" preview={false} />}
+              type="text"
+              size="large"
+              style={{ color: 'white' }}
+              onClick={handleReset}
+            >
+              Reset filter
+            </Button>
+            <Button
+              type="primary"
+              size="large"
+              className="font-bold px-10"
+              htmlType="submit"
+            >
+              Search
+            </Button>
+          </Space>
         </Form>
       </div>
     </div>

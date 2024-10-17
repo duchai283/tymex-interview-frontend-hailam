@@ -1,12 +1,14 @@
-import { Image, Space } from 'antd'
-import CustomButton from 'components/CustomButton'
-import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import { Button, Image, Space } from 'antd'
+import classNames from 'classnames'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { NAVBAR_ROUTES } from 'utils/routeUtils'
 
 interface IProps {}
 
 const Navbar: React.FC<IProps> = ({}) => {
+  const router = useRouter()
   const [open, setOpen] = useState<boolean>(false)
   const [scrollY, setScrollY] = useState<number>(0)
 
@@ -34,7 +36,7 @@ const Navbar: React.FC<IProps> = ({}) => {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-expanded="false"
           onClick={() => setOpen(!open)}
@@ -67,8 +69,12 @@ const Navbar: React.FC<IProps> = ({}) => {
               <li key={item.name}>
                 <Link
                   href={item.route}
-                  aria-current="page"
-                  className="block py-2 px-3 text-white rounded md:bg-transparent md:p-0  hover:text-primary  ease-in pr-[60px]"
+                  className={classNames(
+                    'block py-2 px-3  rounded md:bg-transparent md:p-0  hover:text-primary  ease-in pr-[60px]',
+                    {
+                      'text-primary': router.pathname === item.route,
+                    }
+                  )}
                 >
                   {item.name}
                 </Link>
@@ -78,9 +84,9 @@ const Navbar: React.FC<IProps> = ({}) => {
         </div>
         {!open ? (
           <Space className=" self-end md:pr-[12%] lg:pr-0">
-            <CustomButton type="primary" className="font-semibold">
+            <Button type="primary" className="font-semibold">
               Connect Wallet
-            </CustomButton>
+            </Button>
             <div className="flex pl-5 items-center cursor-pointer">
               <div className="pr-1">
                 <Image src="/icons/world.svg" preview={false} />

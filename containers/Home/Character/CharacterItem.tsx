@@ -24,6 +24,7 @@ const CharacterItem: React.FC<IProps> = ({ item }) => {
           borderRadius: 10,
         },
       }}
+      role="characterItem"
       className="rounded-[10px] transition-opacity duration-500 ease-in-out"
     >
       <div
