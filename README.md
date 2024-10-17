@@ -4,7 +4,8 @@ First, run the development server:
 
 ```bash
 npm install
-npm run dev
+npm run dev to run the application
+npm run test or npm run test:ui for testing
 ```
 
 ## Web Application Test Submission
